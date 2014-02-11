@@ -27,6 +27,7 @@ void Game::draw(){
 void Game::eventLoop(){
 Graphics graphics;
 SDL_Event event;
+
 bool running = true;
     while(running){
     const int start_time_ms = SDL_GetTicks();

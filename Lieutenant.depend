@@ -22,7 +22,8 @@
 	<stdio.h>
 	<SDL/SDL.h>
 
-1392126143 c:\lieutenant-game\game.h
+1392128852 c:\lieutenant-game\game.h
+	<boost/scoped_ptr.hpp>
 
 1392124821 source:c:\lieutenant-game\input.cpp
 

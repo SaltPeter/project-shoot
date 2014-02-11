@@ -34,9 +34,13 @@
 		</Compiler>
 		<Unit filename="game.cpp" />
 		<Unit filename="game.h" />
+		<Unit filename="graphics.cpp" />
+		<Unit filename="graphics.h" />
 		<Unit filename="input.cpp" />
 		<Unit filename="input.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="sprite.cpp" />
+		<Unit filename="sprite.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
