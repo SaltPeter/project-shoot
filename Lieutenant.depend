@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1392083928 source:c:\users\ \downloads\lieutenant\game.cpp
+	<SDL/SDL.h>
+	<iostream>
+	"game.h"
+	<stdio.h>
+
+1392086738 c:\users\ \downloads\lieutenant\game.h
+
+1392073016 source:c:\users\ \downloads\lieutenant\input.cpp
+
+1392065380 c:\users\ \downloads\lieutenant\input.h
+	<SDL2/SDL.h>
+	<map>
+
+1392085598 source:c:\users\ \downloads\lieutenant\main.cpp
+	"game.h"
+
