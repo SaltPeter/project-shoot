@@ -1,8 +1,6 @@
 #ifndef GAME_H_INCLUDED
 #define GAME_H_INCLUDED
 
-struct SDL_Surface;
-
 class Game{
 public:
 Game();
@@ -11,8 +9,6 @@ private:
 void draw();
 void eventLoop();
 void update();
-
-SDL_Surface* screen_;
 };
 
 

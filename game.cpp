@@ -1,23 +1,23 @@
 #include "game.h"
+#include "graphics.h"
 #include <stdio.h>
 #include <SDL/SDL.h>
 
+
 namespace {
-const int screenWidth = 640;
-const int screenHeight = 480;
-const int screenBPP = 32;
+//screenwidth
 const int HZ = 60;
 }
 
 Game::Game(){
 SDL_Init(SDL_INIT_EVERYTHING);
 SDL_ShowCursor(SDL_DISABLE);
-screen_ = SDL_SetVideoMode(screenWidth, screenHeight, screenBPP, SDL_SWSURFACE);
+//screen_
 eventLoop();
 }
 
 Game::~Game(){
-SDL_FreeSurface(screen_);
+//freesurface
 SDL_Quit();
 }
 
@@ -25,6 +25,7 @@ void Game::draw(){
 }
 
 void Game::eventLoop(){
+Graphics graphics;
 SDL_Event event;
 bool running = true;
     while(running){
