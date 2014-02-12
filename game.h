@@ -5,16 +5,22 @@
 // BOOST 1.48
 // http://www.boost.org/users/history/version_1_48_0.html
 
+struct Sprite;
+struct Graphics;
+
 class Game{
 public:
 Game();
 ~Game();
+static int kTileSize;
+
 private:
-void draw();
+void draw(Graphics& graphics);
 void eventLoop();
-void update();
+void update(int elapsed_time_ms);
 
 boost::scoped_ptr<Sprite> sprite_;
+
 };
 
 

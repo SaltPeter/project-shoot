@@ -12,6 +12,9 @@ Graphics();
 void blitSurface(SDL_Surface* source,
                  SDL_Rect* source_rect,
                  SDL_Rect* destination_rect);
+
+void flip();
+
 private:
 SDL_Surface* screen_;
 };

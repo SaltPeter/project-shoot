@@ -20,3 +20,7 @@ void Graphics::blitSurface(SDL_Surface* source,
                  SDL_Rect* destination_rect){
 SDL_BlitSurface(source, source_rect, screen_, destination_rect);
 }
+
+void Graphics::flip(){
+SDL_Flip(screen_);
+}
