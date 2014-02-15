@@ -7,12 +7,9 @@ struct Graphics;
 
 class Sprite{
 public:
-Sprite(const std::string& file_path, int source_x, int source_y,
-       int width, int height);
-virtual ~Sprite();
+Sprite(Graphics &graphics, const std::string& file_path, int source_x, int source_y, int width, int height);
 
 virtual void update(int /*elapsed_time_ms*/){
-
 }
 
 void draw(Graphics& graphics, int x, int y);

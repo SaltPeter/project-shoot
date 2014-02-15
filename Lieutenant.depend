@@ -16,39 +16,60 @@
 1392085598 source:c:\users\ \downloads\lieutenant\main.cpp
 	"game.h"
 
-1392215774 source:c:\lieutenant-game\game.cpp
+1392440200 source:c:\lieutenant-game\game.cpp
 	"game.h"
 	"graphics.h"
-	"sprite.h"
+	"player.h"
+	"input.h"
 	<stdio.h>
 	<SDL/SDL.h>
 
-1392215774 c:\lieutenant-game\game.h
+1392434777 c:\lieutenant-game\game.h
 	<boost/scoped_ptr.hpp>
 
-1392212841 source:c:\lieutenant-game\input.cpp
+1392412622 source:c:\lieutenant-game\input.cpp
+	"input.h"
 
-1392212841 source:c:\lieutenant-game\main.cpp
+1392412504 source:c:\lieutenant-game\main.cpp
 	"game.h"
 
-1392213858 c:\lieutenant-game\graphics.h
+1392440666 c:\lieutenant-game\graphics.h
+	<map>
+	<string>
 
-1392213945 source:c:\lieutenant-game\graphics.cpp
+1392440666 source:c:\lieutenant-game\graphics.cpp
 	"graphics.h"
 	<SDL/SDL.h>
 
-1392212841 source:c:\lieutenant-game\sprite.cpp
+1392440666 source:c:\lieutenant-game\sprite.cpp
 	"sprite.h"
 	"graphics.h"
 
-1392215218 c:\lieutenant-game\sprite.h
+1392440666 c:\lieutenant-game\sprite.h
 	<string>
 	<SDL/SDL.h>
 
-1392215774 source:c:\lieutenant-game\animated_sprite.cpp
+1392439897 source:c:\lieutenant-game\animated_sprite.cpp
 	"animated_sprite.h"
 	"game.h"
 
-1392214846 c:\lieutenant-game\animated_sprite.h
+1392439923 c:\lieutenant-game\animated_sprite.h
 	"sprite.h"
+
+1392445144 c:\lieutenant-game\player.h
+	"sprite.h"
+	<boost/shared_ptr.hpp>
+	<map>
+
+1392385876 c:\lieutenant-game\input.h
+	<SDL/SDL.h>
+	<iostream>
+	<map>
+
+1392444203 source:c:\lieutenant-game\player.cpp
+	"player.h"
+	"game.h"
+	"graphics.h"
+	"animated_sprite.h"
+	<cmath>
 

@@ -4,14 +4,14 @@
 #include <boost/scoped_ptr.hpp>
 // BOOST 1.48
 // http://www.boost.org/users/history/version_1_48_0.html
-
-struct Sprite;
+struct Player;
 struct Graphics;
 
 class Game{
 public:
 Game();
 ~Game();
+
 static int kTileSize;
 
 private:
@@ -19,8 +19,7 @@ void draw(Graphics& graphics);
 void eventLoop();
 void update(int elapsed_time_ms);
 
-boost::scoped_ptr<Sprite> sprite_;
-
+boost::scoped_ptr<Player> player_;
 };
 
 
