@@ -13,7 +13,14 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="C:/SDL-1.2.15/include" />
+					<Add directory="C:/boost_1_48_0" />
 				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDLmain -lSDL" />
+					<Add directory="C:/SDL-1.2.15/lib" />
+					<Add directory="C:/boost_1_48_0/libs" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/Lieutenant" prefix_auto="1" extension_auto="1" />

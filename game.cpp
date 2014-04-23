@@ -6,7 +6,7 @@
 #include <SDL/SDL.h>
 
 namespace{
-const int HZ = 200;
+const int HZ = 30;
 }
 
 int Game::kTileSize = 32;
@@ -56,6 +56,7 @@ int last_update_time = SDL_GetTicks();
     if(input.wasKeyPressed(SDLK_ESCAPE)){
     running = false;
     }
+
     if(input.isKeyHeld(SDLK_LEFT) && input.isKeyHeld(SDLK_RIGHT)){
     player_ -> stopMoving();
     }
@@ -67,6 +68,26 @@ int last_update_time = SDL_GetTicks();
     }
     else{
     player_ -> stopMoving();
+    }
+
+    if(input.isKeyHeld(SDLK_UP) && input.isKeyHeld(SDLK_DOWN)){
+    player_ -> lookHorizontal();
+    }
+    else if(input.isKeyHeld(SDLK_UP)){
+    player_ -> lookUp();
+    }
+    else if(input.isKeyHeld(SDLK_DOWN)){
+    player_ -> lookDown();
+    }
+    else{
+    player_ -> lookHorizontal();
+    }
+
+    if(input.wasKeyPressed(SDLK_z)){
+    player_ -> startJump();
+    }
+    else if(input.wasKeyReleased(SDLK_z)){
+    player_ -> stopJump();
     }
 
     const int current_time_ms = SDL_GetTicks();
